@@ -1,13 +1,11 @@
-// 📮 Made In Xynoz 
-// Subscribe YouTube Xynoz!
-// Tq To Jangan Di Hpus!!
-
+import fetch from 'node-fetch'
 import { promises } from 'fs'
 import { join } from 'path'
 import { xpRange } from '../lib/levelling.js'
 import moment from 'moment-timezone'
 import os from 'os'
 import fs from 'fs'
+const wib2 = moment.tz('Asia/Jakarta').format('HH:mm:ss')
 let tags = {
   'main': 'Main',
   'game': 'Game',
@@ -40,46 +38,40 @@ let tags = {
   '': 'No Category',
 }
 const defaultMenu = {
-  before: `*〔 llı INFO USER ıll 〕*
- 
-⛓️ *Name:* %name
-⛓️ *Tag:* %name
-⛓️ *Status:* %prems
-⛓️ *Limit:* %limit
-⛓️ *Role:* %role
-⛓️ *Level:* %level [ %xp4levelup Xp For Levelup]
-⛓️ *Xp:* %exp / %maxexp
-⛓️ *Total Xp:* %totalexp
-
-
- *〔 llı TODAY ıll 〕*
- 
-⛓️ *Days:* %week %weton
-⛓️ *Date:* %date
-⛓️ *Islamic Date:* %dateIslamic
-
-
- *〔 llı INFO ıll 〕*
- 
-⛓️ *Bot Name:* %me
-⛓️ *Mode:* Public
-⛓️ *Platform:* Linux
-⛓️ *Type:* Node.Js
-⛓️ *Baileys:* Multi Device
-⛓️ *Uptime:* %muptime
-⛓️ *Database:* %rtotalreg dari %totalreg
-
-
- *〔 llı INFO COMMAND ıll 〕*
- 
- *🅟* = Premium
- *🅛* = Limit
-
+  before: `┏━━━ꕥ〔 *llı INFO USER ıll* 〕ꕥ━⬣ 
+┃✾ *Name:* %name
+┃✾ *Tag:* %name
+┃✾ *Status:* %prems
+┃✾ *Limit:* %limit
+┃✾ *Role:* %role
+┃✾ *Level:* %level [ %xp4levelup Xp For Levelup]
+┃✾ *Xp:* %exp / %maxexp
+┃✾ *Total Xp:* %totalexp
+┗━ꕥ
+┏━ꕥ〔 *llı TODAY ıll* 〕ꕥ━⬣
+┃✾ *Days:* %week %weton
+┃✾ *Date:* %date
+┃✾ *Jam:* ${wib2} WIB
+┃✾ *Islamic Date:* %dateIslamic
+┗━ꕥ
+┏━ꕥ〔 *llı INFO ıll* 〕ꕥ━⬣
+┃✾ *Bot Name:* %me
+┃✾ *Mode:* Public
+┃✾ *Platform:* Linux
+┃✾ *Type:* Node.Js
+┃✾ *Baileys:* Multi Device
+┃✾ *Uptime:* %muptime
+┃✾ *Database:* %rtotalreg dari %totalreg
+┗━ꕥ
+┏━ꕥ〔 *llı INFO COMMAND ıll* 〕ꕥ━⬣
+┃✾ *🅟* = Premium
+┃✾ *🅛* = Limit
+┗━ꕥ
 %readmore`.trimStart(),
-  header: '❏┄┅━┅┄〈 *〘 %category 〙*\n│',
-    body: '┊≫ %cmd %islimit %isPremium',
-  footer: '│\n┗━═┅═━━┅┄๑\n',
-  after: `  ${'✧\n┬ 📮 *Note* :\n│ 𝙹𝙸𝙺𝙰 𝙼𝙴𝙻𝙰𝙽𝙶𝙶𝙰𝚁 𝚃𝙾𝚂 𝙰𝙺𝙰𝙽 𝙳𝙸 𝙱𝙰𝙽 𝙿𝙴𝚁𝙼𝙰𝙽𝙴𝙽! ^_^\n╰━━━━━━━━━━━━━━━━┈─◂'}`,
+  header: '┏━━━ꕥ〔 *%category* 〕ꕥ━⬣',
+    body: '┃✾ %cmd %islimit %isPremium',
+  footer: '┗━━━━━━━━━ꕥ\n',
+  after: `  ${'✧\n┏━📮 *Note* :\n┃ 𝙹𝙸𝙺𝙰 𝙼𝙴𝙻𝙰𝙽𝙶𝙶𝙰𝚁 𝚃𝙾𝚂 𝙰𝙺𝙰𝙽 𝙳𝙸 𝙱𝙰𝙽 𝙿𝙴𝚁𝙼𝙰𝙽𝙴𝙽! ^_^\n┗━━━━━━━━━━━━━━━━━━━ꕥ'}`,
 }
 let handler = async (m, { conn, usedPrefix, __dirname }) => {
   try {
@@ -180,12 +172,10 @@ let handler = async (m, { conn, usedPrefix, __dirname }) => {
     const pp = await conn.profilePictureUrl(conn.user.jid).catch(_ => './src/avatar_contact.png')
     const menu = './media/menu.jpg'
     const valor = './thumbnail.jpg'
-    let url = 'https://telegra.ph/file/d6e43eb57f6b7ccb4c98b.jpg'
+    let url = 'https://telegra.ph/file/6ab4daac226292a112540.jpg'
     conn.sendButton(m.chat,
-`SIMPLE BOT BY RENGGA HOSTING
-
-${wish()} ${name}
-`, text.trim(), `https://telegra.ph/file/d6e43eb57f6b7ccb4c98b.jpg`, [
+`${wish()} ${name}
+`, text.trim(), `https://telegra.ph/file/6ab4daac226292a112540.jpg`, [
       [`ꜱᴇᴡᴀʙᴏᴛ`, `${usedPrefix}sewa`],
       [`۪۪ᴀᴜᴛʜᴏʀ ʙᴏᴛ`, `${usedPrefix}owner`]
     ], m, {contextInfo: { externalAdReply :{
@@ -193,8 +183,8 @@ ${wish()} ${name}
                         mediaType: 2,
                         description: 'wm',
                         title: bottime,
-                        body: 'CREATE BY RENGGA',          
-                        thumbnail: fs.readFileSync("./thumbnail.jpg"),
+                        body: 'CREATE BY SIMPLE BOT BY KING OF BEAR',          
+                        thumbnail: await (await fetch(`https://i.ibb.co/jfZVKmC/babi2.jpg`)).buffer(),
                         sourceUrl: sgc
                       }}
     })
@@ -223,7 +213,7 @@ const readMore = more.repeat(4001)
 
 function wish() {
     let wishloc = ''
-  const time = moment.tz('Asia/Kolkata').format('HH')
+  const time = moment.tz('Asia/Jakarta').format('HH')
   wishloc = ('Hi')
   if (time >= 0) {
     wishloc = ('Selamat Malam🌃')

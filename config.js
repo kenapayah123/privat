@@ -46,12 +46,12 @@ global.psaweria = 'https://saweria.co/raraharsita2'
 global.nomorbot = '17326319049'
 global.nomorown = '6288279268363'
 global.namebot = 'YukiBot2022'
-global.nameown = 'King Of Bear'
+global.nameown = 'ᴹᴿ᭄ King Of Bear ×፝֟͜×'
 
 
 /*============== STAFF ==============*/
 global.owner = [
-  ['6288279268363', 'King Of Bear', 'true']
+  ['6288279268363', 'ᴹᴿ᭄ King Of Bear ×፝֟͜×', 'true']
   // [number, dia creator/owner?, dia developer?]
 ] // Put your number here
 global.mods = [] // Want some help?
@@ -95,14 +95,14 @@ global.APIKeys = { // APIKey Here
 }
 
 /*============== WATERMARK ==============*/
-global.wm = 'YukiBot2022 | By King Of Bear' //Main Watermark
-global.wm2 = 'King Of Bear'
-global.wm3 = 'YukiBot2022 | By King Of Bear'
+global.wm = 'YukiBot2022 | By ᴹᴿ᭄ King Of Bear ×፝֟͜×' //Main Watermark
+global.wm2 = 'ᴹᴿ᭄ King Of Bear ×፝֟͜×'
+global.wm3 = 'YukiBot2022 | By ᴹᴿ᭄ King Of Bear ×፝֟͜×'
 global.botdate = `⻝ 𝗗𝗮𝘁𝗲: ${week} ${date}\n⻝ 𝗧𝗶𝗺𝗲: ${wktuwib}`
 global.bottime = `⻝ 𝗧 𝗜 𝗠 𝗘 : ${wktuwib}`
-global.titlebot = `📮 ᴇʟᴀɪɴᴀ ᴄʜᴀɴラ | ʙʏ ${global.nameown}`
-global.author = 'King Of Bear' 
-global.packname = 'King Of Bear'
+global.titlebot = `📮 Yuki Adistyラ | ʙʏ ${global.nameown}`
+global.author = 'ᴹᴿ᭄ King Of Bear ×፝֟͜×' 
+global.packname = 'ᴹᴿ᭄ King Of Bear ×፝֟͜×'
 global.danied = '✘ 𝗘𝗥𝗢𝗥 𝟰𝟬𝟰'
 
 

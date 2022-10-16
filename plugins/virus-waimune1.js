@@ -1,15 +1,15 @@
 let handler = async (m, { conn, usedPrefix: _p, __dirname, args }) => {
 let text = `${htki} *DOWNLOAD* ${htka}
 
-     WhatsApp Imune ♨️
+           WhatsApp Imune ♨️
     
-    --------Kelebihan--------
-• Anti Virtex✔️
-• Anti lag✔️
-• Fitur war✔️
-• Anti Bug troli, slayer Dll✔️
-• No Password ✔️
-`
+┏━━━ꕥ〔 *Kelebihan* 〕ꕥ━⬣
+┃✾ Anti Virtex✔️
+┃✾ Anti lag✔️
+┃✾ Fitur war✔️
+┃✾ Anti Bug troli, slayer Dll✔️
+┃✾ No Password ✔️
+┗━━━━━━ꕥ`
 const templateButtons = [
     {index: 1, urlButton: {displayText: '↗️Link', url: 'https://cararegistrasi.com/cMyXZwsK'}},
 ]

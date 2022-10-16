@@ -28,8 +28,9 @@ let wibh = moment.tz('Asia/Jakarta').format('HH')
 
 /*============== INFO OWNER ==============*/
 global.sig = 'https://instagram.com/drak_ipul123'
+global.syt = 'https://youtu.be/pwLZpdfO8AU'
 global.sgh = 'https://github.com/SaipulAnuar'
-global.sgc = 'https://chat.whatsapp.com/'
+global.sgc = 'https://chat.whatsapp.com/HAZ6yFgCafUAeDbNH33IrL'
 global.swa = 'wa.me/6288279268363'
 global.swb = 'https://'
 global.snh = 'https://nhentai.net/g/365296/' //Make ini aja gausah di ganti.
@@ -45,7 +46,7 @@ global.psaweria = 'https://saweria.co/raraharsita2'
 /*============== NOMOR ==============*/
 global.nomorbot = '17326319049'
 global.nomorown = '6288279268363'
-global.namebot = 'YukiBot2022'
+global.namebot = 'Yuki Adistyラ'
 global.nameown = 'ᴹᴿ᭄ King Of Bear ×፝֟͜×'
 
 
@@ -95,9 +96,9 @@ global.APIKeys = { // APIKey Here
 }
 
 /*============== WATERMARK ==============*/
-global.wm = 'YukiBot2022 | By ᴹᴿ᭄ King Of Bear ×፝֟͜×' //Main Watermark
+global.wm = 'Yuki Adistyラ | By ᴹᴿ᭄ King Of Bear ×፝֟͜×' //Main Watermark
 global.wm2 = 'ᴹᴿ᭄ King Of Bear ×፝֟͜×'
-global.wm3 = 'YukiBot2022 | By ᴹᴿ᭄ King Of Bear ×፝֟͜×'
+global.wm3 = 'Yuki Adistyラ | By ᴹᴿ᭄ King Of Bear ×፝֟͜×'
 global.botdate = `⻝ 𝗗𝗮𝘁𝗲: ${week} ${date}\n⻝ 𝗧𝗶𝗺𝗲: ${wktuwib}`
 global.bottime = `⻝ 𝗧 𝗜 𝗠 𝗘 : ${wktuwib}`
 global.titlebot = `Yuki Adistyラ | ʙʏ ${global.nameown}`
@@ -109,16 +110,17 @@ global.danied = '✘ 𝗘𝗥𝗢𝗥 𝟰𝟬𝟰'
 /*============== LOGO ==============*/
 global.thumb = 'https://telegra.ph/file/1ee2290eedd3330a66df8.jpg' //Main Thumbnail
 global.imagebot = 'https://telegra.ph/file/06c4e93a3d3f388b2642d.jpg'
-global.giflogo = 'https://telegra.ph/file/bef47792a575ef462c852.jpg'
+global.giflogo = 'https://i.ibb.co/jfZVKmC/babi2.jpg'
+global.giflogo2 = 'https://telegra.ph/file/6ab4daac226292a112540.jpg'
 global.thumbs = ['https://telegra.ph/file/7db49c83fd106a60741cd.jpg']
 global.fla = 'https://www6.flamingtext.com/net-fu/proxy_form.cgi?&imageoutput=true&script=sketch-name&doScale=true&scaleWidth=800&scaleHeight=500&fontsize=100&fillTextType=1&fillTextPattern=Warning!&text='
 global.thumbBanned = 'https://telegra.ph/file/77d11b06617f0797a45ac.jpg'
 global.thumbWarn = 'https://telegra.ph/file/77d11b06617f0797a45ac.jpg'
 global.botintro = 'Hallo, Kenalin saya Yuki BOT Saya akan membantu Anda kapan pun & Dimana pun, Saya asisten bot WhatsApp yang di buat oleh *ᴹᴿ᭄ King Of Bear ×፝֟͜×* Saya di rilis pada tanggal\n🗓 ️_16/10/2022_'
-global.intro = 'https://telegra.ph/file/12ca8d3a398030cf10575.jpg'
+global.intro = 'https://telegra.ph/file/6ab4daac226292a112540.jpg'
 /*============== GLOBAL BIO ==============*/
 global.nameowner = 'ᴹᴿ᭄ King Of Bear ×፝֟͜×'
-global.umurowner = '99'
+global.umurowner = '22'
 global.asalowner = 'Amerika Serikat, New York'
 global.nomorowner = 'wa.me/6288279268363'
 global.pacarowner = 'Kepo amat sih;v'
@@ -134,7 +136,7 @@ global.dxlsx = 'application/vnd.openxmlformats-officedocument.spreadsheetml.shee
 global.dpdf = 'application/pdf'
 global.drtf = 'text/rtf'
 
-global.thumbdoc = 'https://telegra.ph/file/a94ebededebcbc792a12a.jpg'
+global.thumbdoc = 'https://telegra.ph/file/6ab4daac226292a112540.jpg'
 
 /*=========== FAKE SIZE ===========*/
 global.fsizedoc = '99999999999999' // default 10TB
@@ -146,7 +148,7 @@ global.dmenut = '❏═┅═━–〈' //top
 global.dmenub = '┊•' //body
 global.dmenub2 = '┊' //body for info cmd on Default menu
 global.dmenuf = '┗––––––––––✦' //footer
-global.hiasan = '꒦ ͝ ꒷ ͝ ꒦ ͝ ꒷ ͝ ꒦ ͝ ꒷ ͝ ꒦ ͝ ꒷ ͝ ꒦ ͝ ꒷ ͝ ꒦ ͝ ꒷ ͝ ꒦ ͝ ꒷ ͝ ꒦'
+global.hiasan = '꒦ ͝ ꒷ ͝ ꒦ ͝ ꒷ ͝ ꒦ ͝ ꒷ ͝ ꒦ ͝ ꒷ ͝ ꒦ ͝ ꒷ ͝ ꒦ ͝ ꒷ ͝ ꒦ ͝ ꒷꒦'
 
 // COMMAND MENU
 global.cmenut = '––––––『' //top
@@ -156,8 +158,8 @@ global.cmenuf = '┗━═┅═━––––––๑\n' //footer
 global.cmenua = '' //after
 global.pmenus = '☃︎' //pembatas menu selector
 
-global.htki = '––––––『' //hiasan title kiri
-global.htka = '』––––––' //hiasan title kanan
+global.htki = '––––『' //hiasan title kiri
+global.htka = '』––––' //hiasan title kanan
 global.lopr = 'Ⓟ'
 global.lolm = 'Ⓛ'
 global.htjava = '❃' //hiasan Doang :v

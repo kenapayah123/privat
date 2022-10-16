@@ -5,7 +5,7 @@ let thumbListpc = `https://telegra.ph/file/d5a1cc2ab8af9bf5acf83.jpg`
 let txt = ''
     for (let [jid] of niorg)
 txt += `${htjava} ${await conn.getName(jid)}\n${dmenub} ${'@' + jid.replace(/@.+/, '')}\n${cmenua}\n\n`
-return conn.sendButton(m.chat, htki + ' *CHAT PRIVATE* ' + htka + '\n' + bottime, '*Total:* ' + niorg.length + '\n\n' + txt.trim(), thumbListpc, [['Sewa Bot', '.sewa'],['Groups List', '.groups']], m, { mentions: conn.parseMention(txt) })
+return conn.sendButton(m.chat, htki + ' *CHAT PRIVATE* ' + htka + '\n' + bottime, '*Total:* ' + niorg.length + '\n\n' + txt.trim(), intro, [['Sewa Bot', '.sewa'],['Groups List', '.groups']], m, { mentions: conn.parseMention(txt) })
 }
 handler.help = ['listpc']
 handler.tags = ['owner']

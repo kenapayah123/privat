@@ -172,22 +172,32 @@ let handler = async (m, { conn, usedPrefix, __dirname }) => {
     const pp = await conn.profilePictureUrl(conn.user.jid).catch(_ => './src/avatar_contact.png')
     const menu = './media/menu.jpg'
     const valor = './thumbnail.jpg'
-    let url = 'https://telegra.ph/file/6ab4daac226292a112540.jpg'
+    let url = 'https://i.ibb.co/jfZVKmC/babi2.jpg'
+    let flaa = pickRandom(global.flaaaaa)
+    const ultah = new Date('November 4 2022 00:00:01')
+    const sekarat = new Date().getTime() 
+    const Kurang = ultah - sekarat
+    const ohari = Math.floor( Kurang / (1000 * 60 * 60 * 24));
+    const ojam = Math.floor( Kurang % (1000 * 60 * 60 * 24) / (1000 * 60 * 60))
+    const onet = Math.floor( Kurang % (1000 * 60 * 60) / (1000 * 60))
+    const detek = Math.floor( Kurang % (1000 * 60) / 1000)
     conn.sendButton(m.chat,
 `${wish()} ${name}
-`, text.trim(), `https://telegra.ph/file/6ab4daac226292a112540.jpg`, [
+`, text.trim(), `${flaa}All Menu`, [
       [`ꜱᴇᴡᴀʙᴏᴛ`, `${usedPrefix}sewa`],
       [`۪۪ᴀᴜᴛʜᴏʀ ʙᴏᴛ`, `${usedPrefix}owner`]
-    ], m, {contextInfo: { externalAdReply :{
-                        mediaUrl: 'sig',
+    ], m, {
+contextInfo: { externalAdReply :{ showAdAttribution: true,
+                        sourceUrl: 'https://youtu.be/pwLZpdfO8AU',
                         mediaType: 2,
-                        description: 'wm',
-                        title: bottime,
-                        body: 'CREATE BY SIMPLE BOT BY KING OF BEAR',          
-                        thumbnail: await (await fetch(`https://i.ibb.co/jfZVKmC/babi2.jpg`)).buffer(),
-                        sourceUrl: sgc
+                        description: `⚘ ᴄʀᴇᴀᴛᴇ ᴹᴿ᭄ King Of Bear ×፝֟͜×`,
+                        title: `💌 Ultah Owner : ${ohari} Hari ${ojam} Jam ${onet} Menit ${detek} Detik`,
+                        body: `⚘ ᴄʀᴇᴀᴛᴇ by ᴹᴿ᭄ King Of Bear ×፝֟͜×`,          previewType: 0,
+                        thumbnail: await (await fetch(giflogo2)).buffer(),
+                        mediaUrl: 'https://youtu.be/pwLZpdfO8AU'
+                        
                       }}
-    })
+})
   } catch (e) {
     conn.reply(m.chat, 'Maaf, menu sedang error', m)
     throw e
@@ -210,6 +220,17 @@ export default handler
 
 const more = String.fromCharCode(8206)
 const readMore = more.repeat(4001)
+
+function pickRandom(list) {
+  return list[Math.floor(list.length * Math.random())]
+}
+
+global.flaaaaa = [
+'https://flamingtext.com/net-fu/proxy_form.cgi?&imageoutput=true&script=water-logo&script=water-logo&fontsize=90&doScale=true&scaleWidth=500&scaleHeight=300&fontsize=100&fillTextColor=%23000&shadowGlowColor=%23000&backgroundColor=%23000&text=',
+'https://flamingtext.com/net-fu/proxy_form.cgi?&imageoutput=true&script=crafts-logo&fontsize=90&doScale=true&scaleWidth=500&scaleHeight=300&text=',
+'https://flamingtext.com/net-fu/proxy_form.cgi?&imageoutput=true&script=amped-logo&doScale=true&scaleWidth=500&scaleHeight=300&text=',
+'https://www6.flamingtext.com/net-fu/proxy_form.cgi?&imageoutput=true&script=sketch-name&doScale=true&scaleWidth=500&scaleHeight=300&fontsize=100&fillTextType=1&fillTextPattern=Warning!&text=',
+'https://www6.flamingtext.com/net-fu/proxy_form.cgi?&imageoutput=true&script=sketch-name&doScale=true&scaleWidth=500&scaleHeight=300&fontsize=100&fillTextType=1&fillTextPattern=Warning!&fillColor1Color=%23f2aa4c&fillColor2Color=%23f2aa4c&fillColor3Color=%23f2aa4c&fillColor4Color=%23f2aa4c&fillColor5Color=%23f2aa4c&fillColor6Color=%23f2aa4c&fillColor7Color=%23f2aa4c&fillColor8Color=%23f2aa4c&fillColor9Color=%23f2aa4c&fillColor10Color=%23f2aa4c&fillOutlineColor=%23f2aa4c&fillOutline2Color=%23f2aa4c&backgroundColor=%23101820&text=']
 
 function wish() {
     let wishloc = ''

@@ -2,8 +2,31 @@ import fetch from 'node-fetch'
 
 //Plugin By Xynoz!!
 let handler = async (m, { conn, usedPrefix }) => {
-	let url = 'https://telegra.ph/file/47708a62a9910c4e196bb.jpg'
-	conn.sendButton(m.chat, '〔 Dᴏɴᴛ ғᴏʀɢᴇᴛ Dᴏɴᴀᴛɪᴏɴ 〕\n╭─「_• Pulsa •_」\n│ • Axis [083173904146]\n│ • Three [089508188642]\n╰────\n\n╭─「_• Dana/Gopay •_」\n│ • Dana [0895419520808]\n│ • Gopay [0895419520808]\n╰────\n\n_◛˖ Ingin Donasi? Chat nomor owner_', wm, await(await fetch(url)).buffer(), [['Owner',`/owner`]],m)
+  const ultah = new Date('November 4 2022 23:59:59')
+    const sekarat = new Date().getTime() 
+    const Kurang = ultah - sekarat
+    const ohari = Math.floor( Kurang / (1000 * 60 * 60 * 24));
+    const ojam = Math.floor( Kurang % (1000 * 60 * 60 * 24) / (1000 * 60 * 60))
+    const onet = Math.floor( Kurang % (1000 * 60 * 60) / (1000 * 60))
+    const detek = Math.floor( Kurang % (1000 * 60) / 1000)
+  let vn = `https://github.com/saipulanuar/Api-Github/raw/main/audio/Donasiku.mp3`
+  conn.sendButton(m.chat, `
+┏━ꕥ〔 *Donasi • Dana* 〕ꕥ━⬣
+┃✾ Gopay  [088279268363]
+┃✾ Dana  [088279268363]
+┃✾ Saweria  [https://saweria.co/raraharsita2]
+┗━━━━ꕥ
+┏━━ꕥ〔 *NOTE* 〕ꕥ━⬣
+┃ Ingin donasi? Wa.me/6288279268363
+┃ _Hasil donasi akan digunakan buat sewa_
+┃ _atau beli *RDP/VPS* agar bot bisa jalan_
+┃ _24jam tanpa kendala_
+┗━━━━ꕥ
+`.trim(), wm, [['Owner',`/owner`]],m) // Tambah sendiri kalo mau
+conn.sendFile(m.chat, vn, 'haori.mp3', null, m, true, {
+type: 'audioMessage', 
+ptt: true, contextInfo:{ externalAdReply: { title: `💌 Ultah Owner : ${ohari} Hari ${ojam} Jam ${onet} Menit ${detek} Detik`, body: `Follow Tiktok My Bestie`, sourceUrl: 'https://www.tiktok.com/@raraharsita2', thumbnail: await (await fetch('https://i.ibb.co/jfZVKmC/babi2.jpg')).buffer(),}} 
+     }) 
 }
 handler.command = /^(pay|payment|bayar)$/i
 handler.tags = ['info']

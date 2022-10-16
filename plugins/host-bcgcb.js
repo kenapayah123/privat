@@ -6,13 +6,13 @@ let handler = async (m, { conn, text } ) => {
 conn.reply(m.chat, `_Mengirim pesan broadcast ke ${groups.length} grup_`, m)
  for (let id of groups) {
  let member = (await conn.groupMetadata(id)).participants.map(v => v.jid)
-conn.sendButton(id, '────━┅ *BROADCAST* ┅━────\n' + text, wm, thumb, [['OWNER 🎐', '.owner'],['DONASI ✨', '.donasi']], false, { contextInfo: {
+conn.sendButton(id, '────━┅ *BROADCAST* ┅━────\n' + text, wm, intro, [['OWNER 🎐', '.owner'],['DONASI ✨', '.donasi']], false, { contextInfo: {
         externalAdReply: {
             title: `${htjava} BROADCAST`,
             body: titlebot,
             description: titlebot,
             mediaType: 2,
-          thumbnail: await(await fetch(thumb)).buffer(),
+          thumbnail: await(await fetch(intro)).buffer(),
          mediaUrl: sig
         }
      }

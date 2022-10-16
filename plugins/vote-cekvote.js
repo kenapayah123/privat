@@ -20,7 +20,7 @@ ${devote.map(u => '@' + u.split('@')[0]).join('\n')}}
 
 *${usedPrefix}hapusvote* - untuk menghapus vote
 
-_by Fangz_
+_by ᴹᴿ᭄ King Of Bear ×፝֟͜×_
 `.trim(), false, { contextInfo: { mentionedJid } })
 }
 handler.help = ['cekvote']

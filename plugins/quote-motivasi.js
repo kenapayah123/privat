@@ -1,19 +1,24 @@
-import fs from 'fs'
 import fetch from 'node-fetch'
-
-let handler = async(m) => {
-let motivasii = pickRandom(global.motivasi)
-    await conn.reply(m.chat, motivasii, 0, {
-    contextInfo: { mentionedJid: [m.sender],
-    externalAdReply :{
-    mediaUrl: '',
-    mediaType: 2,
-    title: 'Ｍｏｔｉｖａｓｉ', 
-    body: 'Dibaca Ya Kak😉',  
-    sourceUrl: sgc, 
-    thumbnail: fs.readFileSync('./thumbnail.jpg')
-      }}
-     })
+import moment from 'moment-timezone'
+import fs from 'fs'
+let handler = async (m, { conn, command, text }) => {
+  let name = await conn.getName(m.sender)
+  let who = m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? conn.user.jid : m.sender
+  let pp = await conn.profilePictureUrl(who, 'image').catch((_) => "https://telegra.ph/file/24fa902ead26340f3df2c.png")
+  let motivasii = pickRandom(global.motivasi)
+  let flaa = pickRandom(global.flaaaaa)
+await conn.sendButton(m.chat, `${motivasii}\n`,wm + '\n\n' + botdate, `${flaa}Motivasi`, [['NEXT','.motivasi']], m, {
+contextInfo: { externalAdReply :{ showAdAttribution: true,
+                        sourceUrl: 'https://youtu.be/pwLZpdfO8AU',
+                        mediaType: 2,
+                        description: `⚘ ᴄʀᴇᴀᴛᴇ ᴹᴿ᭄ King Of Bear ×፝֟͜×`,
+                        title: global.namebot,
+                        body: `⚘ ᴄʀᴇᴀᴛᴇ ᴹᴿ᭄ King Of Bear ×፝֟͜×`,          previewType: 0,
+                        thumbnail: await (await fetch(giflogo2)).buffer(),
+                        mediaUrl: 'https://youtu.be/pwLZpdfO8AU'
+                        
+                      }}
+})
 }
 handler.help = ['motivasi']
 handler.tags = ['quotes']
@@ -78,3 +83,28 @@ global.motivasi = [
 "ᴄᴀʀᴀ ᴛᴇʀʙᴀɪᴋ ᴜɴᴛᴜᴋ ᴍᴇᴍᴜʟᴀɪ ᴀᴅᴀʟᴀʜ ᴅᴇɴɢᴀɴ ʙᴇʀʜᴇɴᴛɪ ʙᴇʀʙɪᴄᴀʀᴀ ᴅᴀɴ ᴍᴜʟᴀɪ ᴍᴇʟᴀᴋᴜᴋᴀɴ.",
 "ᴋᴇɢᴀɢᴀʟᴀɴ ᴛɪᴅᴀᴋ ᴀᴋᴀɴ ᴘᴇʀɴᴀʜ ᴍᴇɴʏᴜꜱᴜʟ ᴊɪᴋᴀ ᴛᴇᴋᴀᴅ ᴜɴᴛᴜᴋ ꜱᴜᴋꜱᴇꜱ ᴄᴜᴋᴜᴘ ᴋᴜᴀᴛ."
 ]
+
+global.flaaaaa = [
+'https://flamingtext.com/net-fu/proxy_form.cgi?&imageoutput=true&script=water-logo&script=water-logo&fontsize=90&doScale=true&scaleWidth=500&scaleHeight=300&fontsize=100&fillTextColor=%23000&shadowGlowColor=%23000&backgroundColor=%23000&text=',
+'https://flamingtext.com/net-fu/proxy_form.cgi?&imageoutput=true&script=crafts-logo&fontsize=90&doScale=true&scaleWidth=500&scaleHeight=300&text=',
+'https://flamingtext.com/net-fu/proxy_form.cgi?&imageoutput=true&script=amped-logo&doScale=true&scaleWidth=500&scaleHeight=300&text=',
+'https://www6.flamingtext.com/net-fu/proxy_form.cgi?&imageoutput=true&script=sketch-name&doScale=true&scaleWidth=500&scaleHeight=300&fontsize=100&fillTextType=1&fillTextPattern=Warning!&text=',
+'https://www6.flamingtext.com/net-fu/proxy_form.cgi?&imageoutput=true&script=sketch-name&doScale=true&scaleWidth=500&scaleHeight=300&fontsize=100&fillTextType=1&fillTextPattern=Warning!&fillColor1Color=%23f2aa4c&fillColor2Color=%23f2aa4c&fillColor3Color=%23f2aa4c&fillColor4Color=%23f2aa4c&fillColor5Color=%23f2aa4c&fillColor6Color=%23f2aa4c&fillColor7Color=%23f2aa4c&fillColor8Color=%23f2aa4c&fillColor9Color=%23f2aa4c&fillColor10Color=%23f2aa4c&fillOutlineColor=%23f2aa4c&fillOutline2Color=%23f2aa4c&backgroundColor=%23101820&text=']
+
+function ucapan() {
+    const time = moment.tz('Asia/Jakarta').format('HH')
+    res = "Selamat dinihari 🎑"
+    if (time >= 4) {
+        res = "Good Morning 🌅"
+    }
+    if (time > 10) {
+        res = "Good Afternoon 🏞️"
+    }
+    if (time >= 15) {
+        res = "Good Afternoon 🌇"
+    }
+    if (time >= 18) {
+        res = "Good Evening 🌃" 
+    }
+    return res
+}

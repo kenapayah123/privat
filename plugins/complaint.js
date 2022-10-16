@@ -13,13 +13,13 @@ const message = {
                 {
                     urlButton: {
                         displayText: 'Customer Service',
-                        url: 'wa.me/6283839200413',
+                        url: 'wa.me/6288279268363',
                     }
                 },
                 {
                     urlButton: {
                         displayText: '📞 Owner',
-                        url: 'https://wa.me/6288215689772',
+                        url: 'https://wa.me/6288279268363',
 
                     }
                 },
@@ -32,7 +32,7 @@ const message = {
             ]
         }
         conn.sendMessage(m.chat, message)
-conn.reply(m.chat, info, m, { contextInfo: { externalAdReply: {title: global.wm, body: 'Report main² tidak akan di respon', sourceUrl: snh, thumbnail: fs.readFileSync('./thumbnail.jpg')  }}})
+conn.reply(m.chat, info, m, { contextInfo: { externalAdReply: {title: global.wm, body: 'Report main² tidak akan di respon', sourceUrl: snh, thumbnail: await (await fetch(`https://i.ibb.co/jfZVKmC/babi2.jpg`)).buffer()  }}})
 }
 handler.help = ['complaint']
 handler.tags = ['group','info']

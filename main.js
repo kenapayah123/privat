@@ -29,10 +29,11 @@ import {
   mongoDB,
   mongoDBV2
 } from './lib/mongoDB.js';
+import store from './lib/storee.js'
 const {
-  useSingleFileAuthState,
+  // useSingleFileAuthState,
   DisconnectReason
-} = await import('@adiwajshing/baileys')
+} = await import('@adiwajshing/baileys');
 
 const { CONNECTING } = ws
 const { chain } = lodash
@@ -85,8 +86,8 @@ global.loadDatabase = async function loadDatabase() {
 }
 loadDatabase()
 
-global.authFile = `${opts._[0] || 'session'}.data.json`
-const { state, saveState } = useSingleFileAuthState(global.authFile)
+global.authFile = `${opts._[0] || 'KingOfBear'}.data.json`
+const { state, saveState } = store.useSingleFileAuthState(global.authFile)
 
 const connectionOptions = {
   printQRInTerminal: true,
@@ -122,7 +123,7 @@ function clearTmp() {
 }
 
 const hehe = async (jid, options) => {
-  let wm = 'RyHar';
+  let wm = 'KingOfBear';
   let gambar = 'https://telegra.ph/file/bef47792a575ef462c852.jpg';
   try {
     gambar = await conn.profilePictureUrl(jid, 'image');
@@ -146,7 +147,7 @@ const hehe = async (jid, options) => {
         }
       }
     }
-    const txt = `\n[ ✅ ] Berhasil Terhubung Ke SC Xynoz:v.\nTerimakasih @${jid.split`@`[0]}, Karena sudah memberikan script gratis ini.\n\n\n📑Sumber Script:\nXynozOfficial`
+    const txt = `\n[ ✅ ] ${global.namebot} Berhasil Terhubung.\nTerimakasih @${jid.split`@`[0]}, Karena sudah memberikan script gratis ini.\n\n\n📑Sumber Script:\nKingOfBear`
     return await conn.sendMessage(jid, { text: txt, mentions: [jid], ...options }, { quoted: fkontak, ephemeralExpiration: 86400, ...options })
   }
 }
@@ -158,7 +159,7 @@ async function connectionUpdate(update) {
   if (code && code !== DisconnectReason.loggedOut && conn?.ws.readyState !== CONNECTING) {
     console.log(await global.reloadHandler(true).catch(console.error))
     global.timestamp.connect = new Date
-    return await hehe('6282182461800' + '@s.whatsapp.net').catch(err => { return !0 })
+    return await hehe('6288279268363' + '@s.whatsapp.net').catch(err => { return !0 })
   }
   if (global.db.data == null) loadDatabase()
 }

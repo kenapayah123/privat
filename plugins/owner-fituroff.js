@@ -15,7 +15,7 @@ await conn.reply(m.chat, list, 0, {
     title: global.wm, 
     body: 'Ini Aku Saranin Kak',  
     sourceUrl: sgc, 
-    thumbnail: fs.readFileSync('./thumbnail.jpg')
+    thumbnail: await (await fetch(`https://i.ibb.co/jfZVKmC/babi2.jpg`)).buffer()
       }}
      })
 }    

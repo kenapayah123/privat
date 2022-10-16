@@ -7,7 +7,7 @@ let info = `
 * | Script Private | Mau Buy? Silahkan Hubungi Owner!*
 
 *--- OFFICIAL GROUP ---*
-_https://chat.whatsapp.com/HnEDHpDISJ9FFGDzbayaMY_
+_https://chat.whatsapp.com/HAZ6yFgCafUAeDbNH33IrL_
 `.trim()
 
 conn.fakeReply(m.chat, info, '0@s.whatsapp.net', '*Script By RyHar | Buy? 50K No Enc*', 'status@broadcast')

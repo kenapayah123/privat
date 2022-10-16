@@ -22,8 +22,8 @@ ${pickRandom(global.pantun)}
                 },
                 {
                     urlButton: {
-                        displayText: ' FOLLOW ME',
-                        url: sig
+                        displayText: ' SUBSCRIBE ME',
+                        url: syt
                     }
                 },
                 {

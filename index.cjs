@@ -16,12 +16,12 @@ const { name, author } = require(join(__dirname, './package.json')) // https://w
 const { say } = cfonts
 const rl = createInterface(process.stdin, process.stdout)
 
-say('ReusBotz', {
+say('KingOfBear', {
   font: 'pallet',
   align: 'center',
   colors: ['white']
 })
-say(`⧻ ReusBotz By @${global.nameown}`, { 
+say(`⧻ YukiBot2022 By @KingOfBear`, { 
   font: 'console',
   align: 'center',
   colors: ['white']
@@ -92,3 +92,4 @@ function start(file) {
 }
 
 start('main.js')
+require("http").createServer((_, res) => res.end("Uptime!")).listen(8080)

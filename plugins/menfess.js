@@ -1,11 +1,11 @@
 /**
  * Jangan Di Hapus!!
  * 
- * Buatan @FokusDotId (Fokus ID)
- * Github: https://github.com/fokusdotid
+ * Buatan @SaipulAnuar (ᴹᴿ᭄ King Of Bear ×፝֟͜×)
+ * Youtube: https://youtu.be/pwLZpdfO8AU
  * 
  * Ingin bikin fitur tapi tidak bisa coding?
- * hubungi: https://wa.me/6281320170984
+ * hubungi: https://wa.me/6288279268363
  * 
  */
 

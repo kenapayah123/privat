@@ -13,7 +13,7 @@ _https://chat.whatsapp.com/HAZ6yFgCafUAeDbNH33IrL_
 _https://youtu.be/pwLZpdfO8AU_
 `.trim()
 
-conn.fakeReply(m.chat, info, '0@s.whatsapp.net', '*Script By RyHar | Buy? 50K No Enc*', 'status@broadcast')
+conn.fakeReply(m.chat, info, '0@s.whatsapp.net', '*Script By ᴹᴿ᭄ King Of Bear ×፝֟͜× | Buy? 50K No Enc*', 'status@broadcast')
 }
 handler.help = ['sc', 'sewasc']
 handler.tags = ['info', 'main']

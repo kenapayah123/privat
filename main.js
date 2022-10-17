@@ -122,35 +122,7 @@ function clearTmp() {
   })
 }
 
-const hehe = async (jid, options) => {
-  let wm = 'KingOfBear';
-  let gambar = 'https://telegra.ph/file/bef47792a575ef462c852.jpg';
-  try {
-    gambar = await conn.profilePictureUrl(jid, 'image');
-  } catch (e) {
 
-  } finally {
-  	const peth = (await import('node-fetch')).default
-    gambar = await (await peth(gambar)).buffer()
-    const fkontak = {
-      key: {
-        participant: `0@s.whatsapp.net`,
-        ...({ remoteJid: 'status@broadcast' })
-      },
-      message: {
-        'contactMessage': {
-          'displayName': wm,
-          'vcard': `BEGIN:VCARD\nVERSION:3.0\nFN:Xynoz\nORG:Ashoka Uni;\nTEL;type=CELL;type=VOICE;waid=6282182461800:+62 821 8246 1800\nEND:VCARD`,
-          'jpegThumbnail': gambar,
-          'thumbnail': gambar,
-          'sendEphemeral': true
-        }
-      }
-    }
-    const txt = `\n[ ✅ ] ${global.namebot} Berhasil Terhubung.\nTerimakasih @${jid.split`@`[0]}, Karena sudah memberikan script gratis ini.\n\n\n📑Sumber Script:\nKingOfBear`
-    return await conn.sendMessage(jid, { text: txt, mentions: [jid], ...options }, { quoted: fkontak, ephemeralExpiration: 86400, ...options })
-  }
-}
 
 async function connectionUpdate(update) {
   const { connection, lastDisconnect, isNewLogin } = update
@@ -159,7 +131,7 @@ async function connectionUpdate(update) {
   if (code && code !== DisconnectReason.loggedOut && conn?.ws.readyState !== CONNECTING) {
     console.log(await global.reloadHandler(true).catch(console.error))
     global.timestamp.connect = new Date
-    return await hehe('6288279268363' + '@s.whatsapp.net').catch(err => { return !0 })
+    
   }
   if (global.db.data == null) loadDatabase()
 }

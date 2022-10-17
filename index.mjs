@@ -17,14 +17,14 @@ const { say } = cfonts
 const rl = createInterface(process.stdin, process.stdout)
 
 say('KingOfBear', {
-  font: 'pallet',
+  font: 'chrome',
   align: 'center',
-  colors: ['white']
+  colors: ['red', 'magenta']
 })
 say(`⧻ YukiBot2022 By @KingOfBear`, { 
   font: 'console',
   align: 'center',
-  colors: ['white']
+  colors: ['red', 'magenta']
 })
 
 var isRunning = false

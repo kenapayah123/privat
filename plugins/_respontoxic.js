@@ -8,6 +8,9 @@ let info = `
 
 *--- OFFICIAL GROUP ---*
 _https://chat.whatsapp.com/HAZ6yFgCafUAeDbNH33IrL_
+
+*--- YOUTUBE OFFICIAL ---*
+_https://youtu.be/pwLZpdfO8AU_
 `.trim()
 
 conn.fakeReply(m.chat, info, '0@s.whatsapp.net', '*Script By RyHar | Buy? 50K No Enc*', 'status@broadcast')

@@ -15,13 +15,13 @@ const time = moment.tz('Asia/Jakarta').format('HH')
     const detek = Math.floor( Kurang % (1000 * 60) / 1000)
   let name = await conn.getName(m.sender)
   let runnya = `━━━ꕥ〔 *SOURCE CODE* 〕ꕥ━⬣
-✾ *Script Private | Mau Buy? Silahkan Hubungi Owner!*
+✾ *Script By King Of Bear*
 
 ✾ *OFFICIAL GROUP*
 _https://chat.whatsapp.com/HAZ6yFgCafUAeDbNH33IrL_
 
 ✾ *YOUTUBE OFFICIAL*
-_https://youtu.be/pwLZpdfO8AU_
+https://youtu.be/iAN51m0-Pyg
 ━━━━━━ꕥ`
   let _muptime
     if (process.send) {

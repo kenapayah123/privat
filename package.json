@@ -11,7 +11,7 @@
     },
     "scripts": {
         "start": "node --experimental-modules index.js",
-        "test": "node test.js",
+        "test": "node index.js",
         "test2": "node index.js"
     },
     "keywords": [

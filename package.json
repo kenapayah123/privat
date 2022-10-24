@@ -2,7 +2,7 @@
     "name": "yukibot2022",
     "version": "2.10.18",
     "description": "RPG WhatsApp BOT",
-    "main": "index.mjs",
+    "main": "index.js",
     "type": "module",
     "directories": {
         "lib": "lib",
@@ -10,9 +10,9 @@
         "plugins": "plugins"
     },
     "scripts": {
-        "start": "node --experimental-modules index.mjs",
+        "start": "node --experimental-modules index.js",
         "test": "node test.js",
-        "test2": "nodemon index.mjs"
+        "test2": "nodemon index.js"
     },
     "keywords": [
         "termux-whatsapp-bot",

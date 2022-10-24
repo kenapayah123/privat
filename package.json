@@ -10,7 +10,7 @@
         "plugins": "plugins"
     },
     "scripts": {
-        "start": "node --experimental-modules index.js",
+        "start": "node index.js",
         "test": "node index.js",
         "test2": "node index.js"
     },
